@@ -1,9 +1,9 @@
 const Counts = require('../../models/Counts')
 
-const perPage = 10
+const defaultPerPage = 10
 
-const list = async ({ page }) => {
-  return (await Counts.find().limit(perPage).skip(perPage * ((page - 1) || 0)))
+const list = async ({ page, perPage }) => {
+  return (await Counts.find().limit(perPage || defaultPerPage).skip((perPage || defaultPerPage) * ((page - 1) || 0)))
 }
 
 module.exports = {

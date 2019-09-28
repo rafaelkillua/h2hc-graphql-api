@@ -9,7 +9,7 @@ exports.types = `
 `
 
 exports.queries = `
-  countsList ( page: Int ): [Counts]
+  countsList ( perPage: Int, page: Int ): [Counts]
 `
 
 exports.mutations = `
