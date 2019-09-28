@@ -1,4 +1,4 @@
-const { Schema } = require('mongoose')
+const { Schema, model } = require('mongoose')
 
 const SessionSchema = new Schema({
   protocol: { type: String },
@@ -11,4 +11,4 @@ const SessionSchema = new Schema({
   honeypot: { type: String }
 }, { timestamps: false })
 
-module.exports = mongoose.model('Session', SessionSchema)
+module.exports = model('Session', SessionSchema)

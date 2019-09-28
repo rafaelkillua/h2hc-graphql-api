@@ -1,13 +1,15 @@
 const { buildSchema } = require('graphql')
-const { types: typesUser, queries: queriesUser, mutations: mutationsUser } = require('./user')
+const { types: typesCounts, queries: queriesCounts, mutations: mutationsCounts } = require('./Counts')
 
 const schema = buildSchema(`
-  ${typesUser}
+  ${typesCounts}
+
   type Query {
-    ${queriesUser}
+    ${queriesCounts}
   }
+
   type Mutation {
-    ${mutationsUser}
+    ${mutationsCounts}
   }
 `)
 

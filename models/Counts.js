@@ -1,4 +1,4 @@
-const { Schema } = require('mongoose')
+const { Schema, model } = require('mongoose')
 
 const CountsSchema = new Schema({
   date: { type: String },
@@ -6,4 +6,4 @@ const CountsSchema = new Schema({
   event_count: { type: Number }
 }, { timestamps: false })
 
-module.exports = mongoose.model('Counts', CountsSchema)
+module.exports = model('Counts', CountsSchema, 'counts')

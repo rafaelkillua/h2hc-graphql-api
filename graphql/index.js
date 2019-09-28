@@ -9,8 +9,7 @@ module.exports = app => {
       (req, res, graphqlParams) => ({
         schema,
         rootValue,
-        graphiql: process.env.NODE_ENV !== 'production',
-        context: { token: req.headers.authorization }
+        graphiql: process.env.NODE_ENV !== 'production'
       })
     )
   )

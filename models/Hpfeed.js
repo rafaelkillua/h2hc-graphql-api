@@ -1,4 +1,4 @@
-const { Schema } = require('mongoose')
+const { Schema, model } = require('mongoose')
 
 const HpfeedSchema = new Schema({
   ident: { type: String },
@@ -17,4 +17,4 @@ const HpfeedSchema = new Schema({
   }
 }, { timestamps: false })
 
-module.exports = mongoose.model('Hpfeed', HpfeedSchema)
+module.exports = model('Hpfeed', HpfeedSchema)

@@ -1,7 +1,7 @@
-const User = require('./user')
+const Counts = require('./counts')
 
 const resolvers = {
-  ...User
+  ...Counts
 }
 
 module.exports = resolvers

@@ -9,7 +9,9 @@ exports.types = `
 `
 
 exports.queries = `
+  countsList ( page: Int ): [Counts]
 `
 
 exports.mutations = `
+  teste: String
 `

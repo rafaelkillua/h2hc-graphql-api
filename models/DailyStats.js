@@ -1,4 +1,4 @@
-const { Schema } = require('mongoose')
+const { Schema, model } = require('mongoose')
 
 const DailyStatsSchema = new Schema({
   channel: { type: String },
@@ -6,4 +6,4 @@ const DailyStatsSchema = new Schema({
   hourly: { type: [Number] }
 }, { timestamps: false })
 
-module.exports = mongoose.model('DailyStats', DailyStatsSchema)
+module.exports = model('DailyStats', DailyStatsSchema)
