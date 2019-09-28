@@ -9,9 +9,5 @@ exports.types = `
 `
 
 exports.queries = `
-  countsList ( perPage: Int, page: Int ): [Counts]
-`
-
-exports.mutations = `
-  teste: String
+  counts ( perPage: Int, page: Int ): [Counts!]!
 `

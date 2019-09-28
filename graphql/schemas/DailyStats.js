@@ -4,12 +4,15 @@ exports.types = `
     id: ID,
     channel: String,
     date: String,
-    hourly: [Int]
+    hourly: [Hour]
+  }
+
+  type Hour {
+    hour: Int
+    value: Int
   }
 `
 
 exports.queries = `
-`
-
-exports.mutations = `
+  dailyStats ( perPage: Int, page: Int ): [DailyStats!]!
 `

@@ -1,7 +1,9 @@
 const Counts = require('./counts')
+const DailyStats = require('./dailyStats')
 
 const resolvers = {
-  ...Counts
+  ...Counts,
+  ...DailyStats
 }
 
 module.exports = resolvers
