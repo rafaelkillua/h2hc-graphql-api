@@ -1,8 +1,7 @@
 {
   "env": {
-    "PORT": 3000,
     "NODE_ENV": "development",
-    "JWTKEY": "JWTKEY",
+    "PORT": 3000,
     "MONGODB_URI": "MONGOURI"
   }
 }
