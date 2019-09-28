@@ -9,7 +9,8 @@ module.exports = app => {
       (req, res, graphqlParams) => ({
         schema,
         rootValue,
-        graphiql: process.env.NODE_ENV !== 'production'
+        // graphiql: process.env.NODE_ENV !== 'production'
+        graphiql: true
       })
     )
   )
