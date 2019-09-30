@@ -17,4 +17,4 @@ const HpfeedSchema = new Schema({
   }
 }, { timestamps: false })
 
-module.exports = model('Hpfeed', HpfeedSchema)
+module.exports = model('Hpfeed', HpfeedSchema, 'hpfeed')

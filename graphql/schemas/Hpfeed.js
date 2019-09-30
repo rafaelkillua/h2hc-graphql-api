@@ -3,7 +3,8 @@ exports.types = `
   type Hpfeed {
     id: ID,
     ident: String,
-    timestamp: Date,
+    timestamp: String,
+    timestampString: String,
     normalized: Boolean,
     channel: String,
     payload: Payload
@@ -22,7 +23,5 @@ exports.types = `
 `
 
 exports.queries = `
-`
-
-exports.mutations = `
+  hpfeeds ( perPage: Int, page: Int ): [Hpfeed!]!
 `
