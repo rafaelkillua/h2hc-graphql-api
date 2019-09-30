@@ -11,4 +11,4 @@ const SessionSchema = new Schema({
   honeypot: { type: String }
 }, { timestamps: false })
 
-module.exports = model('Session', SessionSchema)
+module.exports = model('Session', SessionSchema, 'session')
